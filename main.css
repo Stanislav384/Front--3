@@ -10,11 +10,12 @@ body {
     font-family: 'Jura', sans-serif;
 }
 
-.main-content {
+
+header {
     background-image: url('imgs/Background.webp');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
 }
 
 .black-background {
