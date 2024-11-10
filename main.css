@@ -1,106 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&display=swap');
 
 body {
-    background-image: url('C:/Users/vladg/Pictures/project/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxH5rd9eDAjcFyv45SRYAFMIcKL_PArgVSL403ulRUWEndVKv4gJ-cVQsnIQUDsuygLVE41qqbdGobtd-3xYTdwPGiN-iFw20B6cQg2L3D8cL_mFOwhWe93Q.jpg');
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     color: white;
     min-height: 100vh;
-    margin: 0;
-    overflow: hidden;
     overflow-x: hidden;
+    margin: 0;
     font-family: 'Jura', sans-serif;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.main-content {
+    background-image: url('imgs/Background.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.black-background {
+    background-color: black;
+    height: 200px;
+}
+
+.everyday {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.everyday .background-image {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    height: auto;
+    display: block;
+}
+
+.everyday .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Jura', sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Тінь для тексту */
+}
+
+.image-text-section h1, h2, h3, h4, h5{
+    font-size: 3rem;
+    margin: 0;
 }
 
 header, main, footer {
     position: relative;
     z-index: 1;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-}
-
-nav ul li {
-    font-size: 45px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-right: 40px;
-    cursor: pointer;
-    transition: color 0.3s;
-    position: relative;
-}
-
-nav ul li a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-}
-
-nav ul li:hover {
-    color: white;
-}
-
-.menu-item {
-    font-size: 45px;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.menu-item:hover {
-    color: white;
-}
-
-.menu-item.active {
-    color: white;
-}
-
-
-.menu-item.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 3px;
-    width: 100%;
-    background-color: rgba(255, 165, 0, 1);
-    display: block;
-}
-
-.menu-item:not(.active)::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 3px;
-    width: 100%;
-    background-color: transparent;
-    display: block;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
 }
 
 .text-container {
@@ -110,23 +61,8 @@ nav ul li:hover {
     justify-content: center;
     height: 100vh;
     color: rgba(255, 255, 255, 0.8);
-    transform: translateY(-10px);
     position: relative;
     z-index: 1;
-}
-
-.text-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('C:/Users/vladg/Pictures/project/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxH5rd9eDAjcFyv45SRYAFMIcKL_PArgVSL403ulRUWEndVKv4gJ-cVQsnIQUDsuygLVE41qqbdGobtd-3xYTdwPGiN-iFw20B6cQg2L3D8cL_mFOwhWe93Q.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .text-group {
@@ -155,13 +91,14 @@ nav ul li:hover {
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     padding: 10px 15px;
-    transition: transform 0.3s;
     display: inline-block;
     margin: 5px 0;
+    transition: border-color 0.3s ease, transform 0.5s ease;
 }
 
 .play-button:hover {
     transform: translateY(-5px);
+    border-color: transparent;
 }
 
 .play-button a {
@@ -173,42 +110,15 @@ nav ul li:hover {
     margin: 0;
 }
 
-.play-button a:hover {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.lower-play-button:hover {
-    transform: translateY(-5px);
-}
-
-.menu-play-button {
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    padding: 10px 15px;
-    transition: border-color 0.3s, transform 0.3s;
-}
-
-.menu-play-button:hover {
-    border-color: rgba(255, 165, 0, 1);
-    transform: translateY(-5px);
-}
-
-.menu-play-button a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.menu-play-button a:hover {
-    color: rgba(255, 255, 255, 0.8);
-}
-
 footer {
-    height: 300vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
 }

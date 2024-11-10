@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dota 2</title>  
+    <title>Main</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header>
         <div class="container">
-          <nav>
-            <ul>
-                <li><a href="#" class="menu-item">ГРА</a></li>
-                <li><a href="#" class="menu-item">ГЕРОЇ</a></li>
-                <li><a href="#" class="menu-item">НОВИНИ</a></li>
-            </ul>
-        </nav>        
-          <div class="menu-play-button"><a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">ГРАТИ БЕЗПЛАТНО</a></div>
+            <nav>
+                <ul>
+                    <li><button class="button" id="main-btn" onclick="location.href='main.html'">ГРА</button></li>
+                    <li><button class="button" id="heroes-btn" onclick="location.href='heroes.html'">ГЕРОЇ</button></li>
+                    <li><button class="button" id="news-btn" onclick="location.href='news.html'">НОВИНИ</button></li>
+                </ul>
+            </nav>
+            <div class="menu-play-button"><a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">ГРАТИ БЕЗПЛАТНО</a></div>
         </div>
     </header>
+    <section class="main-content">
+        <div class="text-container">
+            <div class="text-group">
+                <div class="join-text">ПРИЄДНУЙТЕСЬ ДО</div>
+                <div class="battle-text">БИТВИ ДРЕВНІХ</div>
+            </div>
+            <div class="download-section">
+                <div class="play-button lower-play-button"> 
+                    <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" class="play-text">ГРАТИ БЕЗПЛАТНО</a>
+                    <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" class="download-text">ЗАВАНТАЖИТИ В СТІМ</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <main>
-      <div class="text-container">
-          <div class="text-group">
-              <div class="join-text">ПРИЄДНУЙТЕСЬ ДО</div>
-              <div class="battle-text">БИТВИ ДРЕВНІХ</div>
-          </div>
-          <div class="download-section">
-              <div class="play-button lower-play-button"> 
-                  <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" class="play-text">ГРАТИ БЕЗПЛАТНО</a>
-                  <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" class="download-text">ЗАВАНТАЖИТИ В СТІМ</a>
-              </div>
-          </div>
-      </div>
-    </main>
+    <section class="black-background">
+    </section>
+
+    <section class="everyday">
+        <img src="imgs/backgroun2.webp" alt="backgroun2" class="background-image">
+        <div class="text-overlay">
+            <h1>Щодня мільйони гравців зі всього світу вибирають одного з-понад сотні героїв усесвіту</h1>
+            <h2>Dota для командних поєдинків 5 на 5. Dota 2 — це найглибша багатокористувацька</h2>
+            <h3>стратегія в реальному часі, яка коли-небудь була зроблена, де завжди можна досліджувати</h3>
+            <h4>нові стратегії чи тактики. Гра повністю безкоштовна й лишиться такою, тож приєднуйтеся</h4>
+            <h5>до захисту свого Древнього вже зараз.</h5>
+        </div>
+    </section>
 
     <footer>
-        <!-- КОНТАКТНА ІНФОРМАЦІЯ -->
+        <div class="contact-info">
+            <p>Було зроблено для проєкту Front -- 3 by <a class="link-to-fal" href="https://github.com/Falayed">Falayed (Hnativ Vladyslav)</a>.</p>
+        </div>
     </footer>
-    
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

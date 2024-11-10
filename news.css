@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&display=swap');
+body {
+    background-image: url('imgs/Background.webp');
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.text-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-text {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+.battle-text {
+    font-size: 50px;
+    color: white;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.news-item:hover {
+    background-color: #2a2a2a;
+}
+
+.news-item h3 {
+    color: #888;
+    font-size: 1rem;
+}
+
+.news-item h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.news-item h4 {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.news-item p,
+.news-item ul {
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.news-item a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #888;
+}
+
+a.link-to-upd {
+    color: gray !important; /* Заставляє колір тексту бути сірим */
+    text-decoration: color solid gray; /* Міняє стандартне підкреслення */
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+
+a.link-to-upd:hover {
+    color: lightgray !important; /* Світліший сірий при наведенні */
+
+}
