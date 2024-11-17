@@ -1,0 +1,10 @@
+header {
+    background-image: url("imgs/Background.webp");
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+}

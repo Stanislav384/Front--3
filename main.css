@@ -23,28 +23,6 @@ header {
     height: 200px;
 }
 
-.everyday {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.everyday .background-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.everyday .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Jura', sans-serif;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Тінь для тексту */
-}
-
 .image-text-section h1, h2, h3, h4, h5{
     font-size: 3rem;
     margin: 0;

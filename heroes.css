@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&display=swap');
+
 body {
-    background-image: url('imgs/Background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,6 +11,15 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Jura', sans-serif;
+}
+
+.black-background {
+    background-image: url("imgs/background_heroes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
 }
 
 main {
@@ -37,10 +46,10 @@ main {
 }
 
 .hero-card {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
+    position: relative;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -56,9 +65,29 @@ main {
 }
 
 .hero-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 20px;
     color: white;
-    margin-top: 10px;
+    margin: 0;
+    visibility: hidden;
+    z-index: 1;
+    text-shadow: 0 0 5px black, 0 0 8px black;
+    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+    opacity: 0;
+    cursor: default;
+}
+
+.hero-card:hover .hero-name {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.hero-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 footer {
@@ -75,4 +104,25 @@ footer {
     margin: 0;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.text-group {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.battle-text {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 4px;
 }
